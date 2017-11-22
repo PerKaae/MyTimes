@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  color: MediumAquamarine;
+  }
+
+.logo img {
+  margin: 0px 10px;
+}
+
+nav span {
+  display: inline-block;
+
+  }
+
+nav a {
+  color: black;
+}
