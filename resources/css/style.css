@@ -3,18 +3,19 @@ div {
   border: 1px solid blue;
 }
 
-/* Header */
-header {
-  display: fixed;
-  top: 0px;
-}
+/* Header section*/
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
   display: flex;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   align-items: center;
+  background-color: white;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0px 20px 10px 20px;
@@ -34,5 +35,81 @@ nav span {
 
 nav a {
   color: black;
-
   }
+
+/* Text section */
+.column {
+  display: flex;
+  position: relative;
+  top: 100px;
+  justify-content: space-between;
+}
+
+.column .large {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+}
+
+.column .medium {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.column .small {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.imagetext {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: gray; /*temp must be white*/
+  }
+
+.section1 .imagetext {
+  font-size: 40px;
+  text-align: left;
+}
+
+.article {
+  margin-bottom: 15px;
+}
+
+.large .section1 .image {
+  display: flex;
+  justify-content: flex-start;
+  height: 300px;
+  background-image: url(../images/img-story-main.png);
+  }
+
+.large .section2 .image {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  background-image: url(../images/img-story-2.png);
+  }
+
+.large .section3 .image {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-image: url(../images/img-story-3.png);
+  }
+
+.medium .section2 .image {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-image: url(../images/img-story-1.png);
+    }
